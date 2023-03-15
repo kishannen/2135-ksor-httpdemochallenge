@@ -1,0 +1,22 @@
+<h2>ANGULAR HTTP CHALLENGE</h2>
+<div class="table-wrapper">
+  <table class="fl-table">
+    <thead>
+      <tr>
+        <th>POST ID</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let comments of httpusers.slice(0, 10)">
+        <td>{{ comments.postId }}</td>
+        <td>{{ comments.id }}</td>
+        <td>{{ comments.name }}</td>
+        <td>{{ comments.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h5>Code Design from: https://codepen.io/florantara/pen/dROvdb</h5>
